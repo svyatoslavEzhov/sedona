@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Sedona</title>
+</head>
+<body>
+  <header class="main-header">
+    <div class="conteiner">
+      <nav class="main-navigation clearfix">
+        <ul>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="#">Гостиницы</a></li>
+        </ul>
+      </nav>
+      <div class="logo">
+         <img src="http://placehold.it/130x70" alt="#">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="conteiner">
+      <section class="filter">
+        <form action="/echo" method="post">
+          <div class="infrastructure">
+            <p>Инфраструктура</p>
+              <input id="pool" type="checkbox" checked>
+              <label for="pool">Бассейн</label>
+              <input id="parking" type="checkbox">
+              <label for="parking">Парковка</label>
+              <input id="wifi" type="checkbox">
+              <label for="wifi">Wi-Fi</label>
+          </div>
+          <div class="type-of-property">
+           <p>Тип жилья</p>
+              <input id="hotel" type="checkbox" checked>
+              <label for="hotel">Гостиница</label>
+              <input id="motel" type="checkbox" checked>
+              <label for="motel">Мотель</label>
+              <input id="apartments" type="checkbox" checked>
+              <label for="apartments">Апартаменты</label>
+          </div>
+          <div class="price">
+            <p>Стоимость в сутки (Р):</p>
+            <div class="from">От<output></output></div>
+            <div class="before">До<output></output></div>
+            <input type="range" min="0" max="4000" step="500" multiple>
+          </div>
+        </form>
+      </section>
+      <section class="finds">
+        <div class="sorting">
+          <div class="find-obj">Найдено: 3</div>
+          <div class="sorting-by">
+            <span>Сортировка:</span>
+            <a href="#">По цене</a>
+            <a href="#">По типу</a>
+            <a href="#">По рейтингу</a>
+          </div>
+          <button class="up" type="button"></button>
+          <button class="down" type="button"></button>
+        </div>
+        <div class="objects">
+          <div class="obj-1">
+            <img src="http://placehold.it/130x70" alt="#">
+            <h2>Amara resort & SPA</h2>
+            <div class="filter-type">Гостиница</div>
+            <div class="filter-price">От 3500 Р.</div>
+            <a href="#">Подробнее</a>
+            <a href="#">Забронировать</a>
+            <div class="rating">Рейтинг: 8,5</div>
+          </div>
+          <div class="obj-2">
+            <img src="http://placehold.it/130x70" alt="#">
+            <h2>Desert quail inn</h2>
+            <div class="filter-type">Мотель</div>
+            <div class="filter-price">От 2000 Р.</div>
+            <a href="#">Подробнее</a>
+            <a href="#">Забронировать</a>
+            <div class="rating">Рейтинг: 8,9</div>
+          </div>
+          <div class="obj-3">
+            <img src="http://placehold.it/130x70" alt="#">
+            <h2>Villas at poco diablo</h2>
+            <div class="filter-type">Апартаменты</div>
+            <div class="filter-price">От 4000 Р.</div>
+            <a href="#">Подробнее</a>
+            <a href="#">Забронировать</a>
+            <div class="rating">Рейтинг: 9,2</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="conteiner">
+      <div class="hashtag">#visitsedona</div>
+      <div class="footer-social">
+          <a href="#" class="social-btn social-btn-tw">Твитер</a>
+          <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+          <a href="#" class="social-btn social-btn-ytb">Ютуб</a>
+      </div>
+      <div class="footer-logo">
+        <span>WEBSITE by</span>
+        <img src="http://placehold.it/130x70" alt="#">
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
