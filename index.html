@@ -7,7 +7,7 @@
 <body>
   <header class="main-header">
     <!--Прости, contAiner:)-->
-    <div class="conteiner">
+    <div class="container">
       <nav class="main-navigation clearfix">
         <ul>
           <li><a href="#">Информация</a></li>
@@ -25,21 +25,26 @@
   <main>
     <div class="conteiner">
       <div class="intro">
+      <!-- Добавил потерявшийся контент -->
+       <span class="greeting">Welcome</span>
+       <span class="greeting-to">to the gorgeous</span>
+       <h1 class="main-title">Sedona</h1>
+       <p class="citation">"Because the Grand Canyon sucks!"</p>
         <!--Потерял контент: wellcome... sedona и тп-->
         <img src="http://placehold.it/1200x500" alt="#">
       </div>
       <article class="reasons">
-        <h1>СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h1>
-        <!--Старайся не оставлять чистых тегов. Хорошая практика - стилизация через селекторы классов. То есть <h1 class="general-title" какой-нибудь - это гуд-->
-        <p>Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
+        <h1 class="general-title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h1>
+        <!-- Добавил в верхний и нижний элементы классы -->
+        <p class="general-description">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
         <section class="features-town">
           <div class="row-top clearfix">
-            <!--Долго пыталась понять что значит nmb. Есть несколько устоявшихся в верстке сокращений - btn, например. Но лучше всё-таки использовать понятные тебе и другим названия-->
-            <div class="features-nmb">
-             <!--div с заголовочным классом не самый изящный вариант. Все-таки дивы служат больше для построения сеток. Либо это <p> с классом, либо и лучше, на мой взгляд, просто pfujkjdjr подходящего уровня-->
-              <div class="features-title">Настоящий городок</div>
+            <!-- В названиях классов с содержанием *-nmb поменял на number -->
+            <div class="features-number">
+             <!-- div с заголовочным классом не самый изящный вариант. Все-таки дивы служат больше для построения сеток. Либо это <p> с классом, либо и лучше, на мой взгляд, просто заголовок подходящего уровня --> 
+              <span class="features-title">Настоящий городок</span>
               <!--Для маленькой циферки целый див? Это span-->
-              <div class="reason-nbm">— №1 —</div>
+              <span class="reason-nbm">— №1 —</span>
               <p>Седона не атракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="town-photo">
@@ -49,15 +54,16 @@
           <div class="row-bottom">
             <ul class="features-items">
               <li>
-                <div class="item-title">Жилье</div>
+                <!-- Элементы div.item-title изенил теги на span -->
+                <span class="item-title">Жилье</span>
                 <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
               <li>
-                <div class="item-title">Еда</div>
+                <span class="item-title">Еда</span>
                 <p>Всегда заказывай ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
               </li>
               <li>
-                <div class="item-title">Сувениры</div>
+                <span class="item-title">Сувениры</span>
                 <p>Не только китайского, но и местного производства!</p>
               </li>
             </ul>
@@ -66,27 +72,27 @@
         <section class="features-neighborhood">
           <div class="row-top clearfix">
             <img src="http://placehold.it/800x250" alt="#">
-            <div class="features-nmb">
-              <div class="features-title">ТАМ ЕСТЬ Мост дьявола</div>
-              <div class="reason-nbm">— №2 —</div>
+            <div class="features-number">
+              <span class="features-title">ТАМ ЕСТЬ Мост дьявола</span>
+              <span class="reason-nbm">— №2 —</span>
               <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
           </div>
           <div class="row-bottom">
             <ul>
               <li>
-                <div class="features-title">НЕБОЛЬШАЯ ПЛОЩАДЬ</div>
-                <div class="reason-nbm">— №3 —</div>
+                <span class="features-title">НЕБОЛЬШАЯ ПЛОЩАДЬ</span>
+                <span class="reason-nbm">— №3 —</span>
                 <p>ВСЕ достопримеча-тельности находятся очень близко</p>
               </li>
               <li>
-                <div class="features-title">КРАСИВАЯ ДОРОГА</div>
-                <div class="reason-nbm">— №4 —</div>
+                <span class="features-title">КРАСИВАЯ ДОРОГА</span>
+                <span class="reason-nbm">— №4 —</span>
                 <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
               </li>
               <li>
-                <div class="features-title">МАЛО ТУРИСТОВ</div>
-                <div class="reason-nbm">— №5 —</div>
+                <span class="features-title">МАЛО ТУРИСТОВ</span>
+                <span class="reason-nbm">— №5 —</span>
                 <p>Большинство едет в гранд каньон и толпится там</p>
               </li>
             </ul>
@@ -94,11 +100,12 @@
         </section>
       </article>
       <section class="search-hotels">
-        <div class="search-title">ЗАИНТЕРЕСОВАЛИСЬ?</div>
-        <div class="search-clarification">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне
-        </div>
+        <!-- Изменил нижний элемент div на span (инициатива) -->
+        <span class="search-title">ЗАИНТЕРЕСОВАЛИСЬ?</span>
+        <!-- Изменил нижний элемент div на p (инициатива) -->
+        <p class="search-clarification">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <div class="font-title">ПОИСК ГОСТИНИЦЫ В седоне</div>
-        <form action="#" method="post">
+        <form action="/ehco" method="post">
           <label>
             Дата заезда:
             <input type="date" name="date-in">
@@ -107,6 +114,7 @@
             Дата Выезда:
             <input type="date" name="date-out">
           </label>
+<!--         
           <label>
             Взрослыe:
             <button type="button">+</button>
@@ -119,6 +127,7 @@
             <input type="number">
             <button type="button">-</button>
           </label>
+-->
         </form>
       </section>
     </div>

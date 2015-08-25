@@ -26,7 +26,7 @@
       <section class="filter">
         <form action="/echo" method="post">
           <div class="infrastructure">
-            <p>Инфраструктура</p>
+            <span class="form-title">Инфраструктура</span>
               <input id="pool" type="checkbox" checked>
               <label for="pool">Бассейн</label>
               <input id="parking" type="checkbox">
@@ -35,7 +35,7 @@
               <label for="wifi">Wi-Fi</label>
           </div>
           <div class="type-of-property">
-           <p>Тип жилья</p>
+            <span class="form-title">Тип жилья</span>
               <input id="hotel" type="checkbox" checked>
               <label for="hotel">Гостиница</label>
               <input id="motel" type="checkbox" checked>
@@ -44,52 +44,53 @@
               <label for="apartments">Апартаменты</label>
           </div>
           <div class="price">
-            <p>Стоимость в сутки (Р):</p>
+            <span>Стоимость в сутки (Р):</span>
+            <!-- В следующиих трёх элементов разметки не уверен на 100% правильности -->
             <div class="from">От<output></output></div>
             <div class="before">До<output></output></div>
-            <input type="range" min="0" max="4000" step="500" multiple>
+            <input type="range" min="0" max="4000" step="500">
           </div>
         </form>
       </section>
       <section class="finds">
         <div class="sorting">
-          <div class="find-obj">Найдено: 3</div>
+          <span class="find-obj">Найдено: 3</span>
           <div class="sorting-by">
             <span>Сортировка:</span>
             <a href="#">По цене</a>
             <a href="#">По типу</a>
             <a href="#">По рейтингу</a>
           </div>
-          <button class="up" type="button"></button>
-          <button class="down" type="button"></button>
+          <button class="up" type="button">up</button>
+          <button class="down" type="button">down</button>
         </div>
         <div class="objects">
           <div class="obj-1">
             <img src="http://placehold.it/130x70" alt="#">
             <h2>Amara resort & SPA</h2>
-            <div class="filter-type">Гостиница</div>
-            <div class="filter-price">От 3500 Р.</div>
+            <span class="filter-type">Гостиница</span>
+            <span class="filter-price">От 3500 Р.</span>
             <a href="#">Подробнее</a>
             <a href="#">Забронировать</a>
-            <div class="rating">Рейтинг: 8,5</div>
+            <span class="rating">Рейтинг: 8,5</span>
           </div>
           <div class="obj-2">
             <img src="http://placehold.it/130x70" alt="#">
             <h2>Desert quail inn</h2>
-            <div class="filter-type">Мотель</div>
-            <div class="filter-price">От 2000 Р.</div>
+            <span class="filter-type">Мотель</span>
+            <span class="filter-price">От 2000 Р.</span>
             <a href="#">Подробнее</a>
             <a href="#">Забронировать</a>
-            <div class="rating">Рейтинг: 8,9</div>
+            <span class="rating">Рейтинг: 8,9</span>
           </div>
           <div class="obj-3">
             <img src="http://placehold.it/130x70" alt="#">
             <h2>Villas at poco diablo</h2>
-            <div class="filter-type">Апартаменты</div>
-            <div class="filter-price">От 4000 Р.</div>
+            <span class="filter-type">Апартаменты</span>
+            <span class="filter-price">От 4000 Р.</span>
             <a href="#">Подробнее</a>
             <a href="#">Забронировать</a>
-            <div class="rating">Рейтинг: 9,2</div>
+            <span class="rating">Рейтинг: 9,2</span>
           </div>
         </div>
       </section>
