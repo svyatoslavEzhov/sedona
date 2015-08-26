@@ -38,7 +38,7 @@
         <h1 class="general-title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h1>
         <!-- Добавил в верхний и нижний элементы классы -->
         <p class="general-description">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
-        <section class="features-town">
+        <div class="features-town">
           <div class="row-top clearfix">
             <!-- В названиях классов с содержанием *-nmb поменял на number -->
             <div class="features-number">
@@ -69,8 +69,8 @@
               </li>
             </ul>
           </div>
-        </section>
-        <section class="features-neighborhood">
+        </div>
+        <div class="features-neighborhood">
           <div class="row-top clearfix">
             <img src="http://placehold.it/800x250" alt="#">
             <div class="features-number">
@@ -98,9 +98,9 @@
               </li>
             </ul>
           </div>
-        </section>
+        </div>
       </article>
-      <section class="search-hotels">
+      <div class="search-hotels">
         <!-- Изменил нижний элемент div на span (инициатива) -->
         <span class="search-title">ЗАИНТЕРЕСОВАЛИСЬ?</span>
         <!-- Изменил нижний элемент div на p (инициатива) -->
@@ -115,22 +115,16 @@
             Дата Выезда:
             <input type="date" name="date-out">
           </label>
-<!--         
-          <label>
-            Взрослыe:
-            <button type="button">+</button>
+            <span>Взрослыe:</span>
+            <button class="plus" type="button">+</button>
             <input type="number">
-            <button type="button">-</button>
-          </label>
-          <label>
-            Дети:
-            <button type="button">+</button>
+            <button class="minus" type="button">-</button>
+            <span>Дети:</span>
+            <button class="plus" type="button">+</button>
             <input type="number">
-            <button type="button">-</button>
-          </label>
--->
+            <button class="minus" type="button">-</button>
         </form>
-      </section>
+      </div>
     </div>
   </main>
   

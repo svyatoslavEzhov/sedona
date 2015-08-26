@@ -24,7 +24,7 @@
 
   <main>
     <div class="conteiner">
-      <section class="filter">
+      <div class="filter">
         <form action="/echo" method="post">
           <div class="infrastructure">
             <span class="form-title">Инфраструктура</span>
@@ -45,15 +45,14 @@
               <label for="apartments">Апартаменты</label>
           </div>
           <div class="price">
-            <span>Стоимость в сутки (Р):</span>
-            <!-- В следующиих трёх элементов разметки не уверен на 100% правильности -->
-            <div class="from">От<output></output></div>
-            <div class="before">До<output></output></div>
+            <span class="form-title">Стоимость в сутки (Р):</span>            
+            <span class="from">От</span>
+            <span class="before">До</span>
             <input type="range" min="0" max="4000" step="500">
           </div>
         </form>
-      </section>
-      <section class="finds">
+      </div>
+      <div class="finds">
         <div class="sorting">
           <span class="find-obj">Найдено: 3</span>
           <div class="sorting-by">
@@ -94,7 +93,7 @@
             <span class="rating">Рейтинг: 9,2</span>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   </main>
 
