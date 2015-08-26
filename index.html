@@ -21,119 +21,109 @@
       </div>
     </div>
   </header>
+     <!--
+     <div> только для построения сетки
+     <p> - для абзацов текста и
+     <span> для маленьких подписей.
+     И есть еще иерархия <h> по значимости.
+     Семантичные теги вообще пока не берем.
+     -->
   
   <main>
     <div class="container">
       <div class="intro">
-      <!-- Не помню говорила ли тебе это на консультации. Хороший дизайнер этот "потерявшийся контент" сделал бы шрифтом, тк он важен для индексации (в нашем макете - это картинки). А хороший верстальщик, чтобы нивелировать косяк дизайнера, сделает эту штуку картинкой с прописанным alt для индексации поисковиками. Предлагаю не париться со вставкой каждой надписи отдельной картинкой, а склеить её в одну. Иногда очень полезно ползать по слоям в макете и смотреть не только визуально на макет вцелом, но и по слоям. Тогда бы ты точно увидел, что это не надписи, а картинки)-->
-       <span class="greeting">Welcome</span>
-       <span class="greeting-to">to the gorgeous</span>
-       <h1 class="main-title">Sedona</h1>
-       <p class="citation">"Because the Grand Canyon sucks!"</p>
-        <!--Потерял контент: wellcome... sedona и тп-->
+        <img src="http://placehold.it/300x300" alt="Welcome to the gorgeous Sedona">
         <img src="http://placehold.it/1200x500" alt="#">
       </div>
-      <article class="reasons">
-        <h1 class="general-title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h1>
-        <!-- Добавил в верхний и нижний элементы классы -->
-        <p class="general-description">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
-        <div class="features-town">
-          <div class="row-top clearfix">
-            <!-- В названиях классов с содержанием *-nmb поменял на number -->
-            <div class="features-number">
-             <!-- div с заголовочным классом не самый изящный вариант. Все-таки дивы служат больше для построения сеток. Либо это <p> с классом, либо и лучше, на мой взгляд, просто заголовок подходящего уровня -->
-             <!-- есть такая болезнь - дивянка. У тебя новый штам этого вируса - спанянка. Очень приятно, что ты так старательно следуешь рекомендациям, но со спанами явно перестарался.  Либо <p>, либо <h>. Лучше <h> Это заголовок преимущества продукта--> 
-              <span class="features-title">Настоящий городок</span>
-              <!--Для маленькой циферки целый див? Это span-->
-              <span class="reason-nbm">— №1 —</span>
-              <p>Седона не атракцион для туристов, там течет своя жизнь</p>
+      <div class="index-content">
+        <h1 class="content-title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h1>
+        <p class="content-description">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
+        <div class="content-town">
+          <div class="town-row-top clearfix">
+            <div class="town-reason">
+              <h2 class="reason-title">Настоящий городок</h2>
+              <span class="reason-number">— №1 —</span>
+              <p class="reason-description">Седона не атракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="town-photo">
               <img src="http://placehold.it/800x250" alt="#">
             </div>
           </div>
-          <div class="row-bottom">
-            <ul class="features-items">
+          <div class="town-row-bottom">
+            <ul class="town-item">
               <li>
-                <!-- Элементы div.item-title изенил теги на span -->
-                <!-- Либо <p>, либо <h>. Лучше <h> Это заголовок преимущества продукта--> 
-                <span class="item-title">Жилье</span>
-                <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                <h3 class="item-title">Жилье</h3>
+                <p class="item-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
               <li>
-                <!-- Либо <p>, либо <h>. Лучше <h> Это заголовок преимущества продукта-->
-                <span class="item-title">Еда</span>
-                <p>Всегда заказывай ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+                <h3 class="item-title">Еда</h3>
+                <p class="item-description">Всегда заказывай ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
               </li>
               <li>
-                 <!-- Либо <p>, либо <h>. Лучше <h> Это заголовок преимущества продукта-->
-                <span class="item-title">Сувениры</span>
-                <p>Не только китайского, но и местного производства!</p>
+                <h3 class="item-title">Сувениры</h3>
+                <p class="item-description">Не только китайского, но и местного производства!</p>
               </li>
             </ul>
           </div>
         </div>
-        <div class="features-neighborhood">
-          <div class="row-top clearfix">
-            <img src="http://placehold.it/800x250" alt="#">
-            <div class="features-number">
-                <!-- Либо <p>, либо <h>. Лучше <h> Это заголовок преимущества продукта-->
-              <span class="features-title">ТАМ ЕСТЬ Мост дьявола</span>
-              <span class="reason-nbm">— №2 —</span>
-              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        <div class="content-neighborhood">
+          <div class="neighborhood-row-top clearfix">
+            <div class="neighborhood-photo">
+              <img src="http://placehold.it/800x250" alt="#">
+            </div>
+            <div class="neighborhood-reason">
+              <h2 class="reason-title">ТАМ ЕСТЬ Мост дьявола</h2>
+              <span class="reason-number">— №2 —</span>
+              <p class="reason-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
           </div>
-          <div class="row-bottom">
-            <ul>
-              <li>
-                <!-- Либо <p>, либо <h>. Лучше <h> Это заголовок преимущества продукта-->
-                <span class="features-title">НЕБОЛЬШАЯ ПЛОЩАДЬ</span>
-                <span class="reason-nbm">— №3 —</span>
-                <p>ВСЕ достопримеча-тельности находятся очень близко</p>
+          <div class="neighborhood-row-bottom">
+            <ul class="neighborhood-list">
+              <li class="neighborhood-reason">
+                <h2 class="reason-title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+                <span class="reason-number">— №3 —</span>
+                <p class="reason-description">ВСЕ достопримеча-тельности находятся очень близко</p>
               </li>
-              <li>
-                <!-- Либо <p>, либо <h>. Лучше <h> Это заголовок преимущества продукта-->
-                <span class="features-title">КРАСИВАЯ ДОРОГА</span>
-                <span class="reason-nbm">— №4 —</span>
-                <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+              <li class="neighborhood-reason">
+                <h2 class="reason-title">КРАСИВАЯ ДОРОГА</h2>
+                <span class="reason-number">— №4 —</span>
+                <p class="reason-description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
               </li>
-              <li>
-                <!-- Либо <p>, либо <h>. Лучше <h> Это заголовок преимущества продукта-->
-                <span class="features-title">МАЛО ТУРИСТОВ</span>
-                <span class="reason-nbm">— №5 —</span>
-                <p>Большинство едет в гранд каньон и толпится там</p>
+              <li class="neighborhood-reason">
+                <h2 class="reason-title">МАЛО ТУРИСТОВ</h2>
+                <span class="reason-number">— №5 —</span>
+                <p class="reason-description">Большинство едет в гранд каньон и толпится там</p>
               </li>
             </ul>
           </div>
         </div>
-      </article>
-      <div class="search-hotels">
-        <!-- Изменил нижний элемент div на span (инициатива) -->
-        <!--Зря. Это ведь тоже заголовок. -->
-        <span class="search-title">ЗАИНТЕРЕСОВАЛИСЬ?</span>
-        <!-- Изменил нижний элемент div на p (инициатива) -->
-        <p class="search-clarification">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <!--Я бы сделала это <p>^ а лучше даже <h>-->
-        <div class="font-title">ПОИСК ГОСТИНИЦЫ В седоне</div>
-        <form action="/ehco" method="post">
-        <!--Сразу предупреждаю, что этой разметки формы тебе не хватит для стилизации. После занятия про сетки, взгляни на форму также как смотришь на всю страницу целиком, разделяя её на смысловые блоки.-->
+      </div>
+      <div class="search">
+        <h3 class="search-title">ЗАИНТЕРЕСОВАЛИСЬ?</h3>
+        <p class="search-description">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <!-- После занятия про сетки, взгляни на форму также как смотришь на всю страницу целиком, разделяя её на смысловые блоки. -->
+        <form class="search-hotel" action="/ehco" method="post">
+          <h2 class="hotel-title">ПОИСК ГОСТИНИЦЫ В седоне</h2>
           <label>
             Дата заезда:
-            <input type="date" name="date-in">
+            <input type="text" name="date-in">
           </label>
           <label>
             Дата Выезда:
-            <input type="date" name="date-out">
+            <input type="text" name="date-out">
           </label>
-            <span>Взрослыe:</span>
-            <!--Это обсуждали. Button в первую очередь служит для связи с сервером. То есть для того, чтобы получить или отправить какие-то данные. Тут нам потребуется просто обработать с помощью JS событие клика на этом элементе. Сделай эти + и - просто спанами. Это не грубая ошибка. Просто button - серьезный элемент и достоин лучшей роли)-->
-            <button class="plus" type="button">+</button>
+          <div class="hotel-for">
+            <span class="for-age">Взрослыe:</span>
+            <span class="for-plus">+</span>
             <input type="number">
-            <button class="minus" type="button">-</button>
-            <span>Дети:</span>
-            <button class="plus" type="button">+</button>
+            <span class="for-minus">-</span>
+          </div>
+          <div class="hotel-for">
+            <span class="for-age">Дети:</span>
+            <span class="for-plus">+</span>
             <input type="number">
-            <button class="minus" type="button">-</button>
+            <span class="for-minus">-</span>
+          </div>
         </form>
       </div>
     </div>
@@ -141,16 +131,15 @@
   
   <footer class="main-footer">
     <div class="container">
-     <!-- Тут как раз лучше спан, но не критично. У нас с Сашей немного отличаются подходы. Правильного/неправильного тут нет. У тебя может быть вообще третий, если ты его можешь логически объяснить. Я использую дивы, например, только для построения сетки. <p> - для абзацов текста и <span> для маленьких подписей. И есть еще иерархия <h> по значимости.  Семантичные теги вообще пока не берем. Тут тоже постепенно просто складывается своя система и понимание спецификации. В личку тебе пришлю тот принцип, которым пользуюсь сама, напомни. Обрати внимание, что я не исправляю тебе одно и то же на всех страницах, то есть в hotels тоже надо поправить -->
-      <div class="hashtag">#visitsedona</div>
+      <span class="footer-hashtag">#visitsedona</span>
       <div class="footer-social">
-          <a href="#" class="social-btn social-btn-tw">Твитер</a>
-          <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-          <a href="#" class="social-btn social-btn-ytb">Ютуб</a>
+          <a class="social-btn social-btn-tw" href="#">Твитер</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-ytb" href="#">Ютуб</a>
       </div>
       <div class="footer-logo">
-        <span>WEBSITE by</span>
-        <img src="http://placehold.it/130x70" alt="#">
+        <span class="logo-by">WEBSITE by</span>
+        <img class="logo-picture" src="http://placehold.it/130x70" alt="#">
       </div>
     </div>
   </footer>

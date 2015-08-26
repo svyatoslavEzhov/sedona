@@ -25,9 +25,9 @@
   <main>
     <div class="contаiner">
       <div class="filter">
-        <form action="/echo" method="post">
-          <div class="infrastructure">
-            <span class="form-title">Инфраструктура</span>
+        <form class="filter-form" action="/echo" method="post">
+          <div class="form-infrastructure">
+            <h3 class="infrastructure-title">Инфраструктура</h3>
               <input id="pool" type="checkbox" checked>
               <label for="pool">Бассейн</label>
               <input id="parking" type="checkbox">
@@ -35,8 +35,8 @@
               <input id="wifi" type="checkbox">
               <label for="wifi">Wi-Fi</label>
           </div>
-          <div class="type-of-property">
-            <span class="form-title">Тип жилья</span>
+          <div class="form-property">
+            <h3 class="property-title">Тип жилья</h3>
               <input id="hotel" type="checkbox" checked>
               <label for="hotel">Гостиница</label>
               <input id="motel" type="checkbox" checked>
@@ -44,53 +44,57 @@
               <input id="apartments" type="checkbox" checked>
               <label for="apartments">Апартаменты</label>
           </div>
-          <div class="price">
-            <span class="form-title">Стоимость в сутки (Р):</span>
-            <span class="from">От</span>
-            <span class="before">До</span>
+          <div class="property-price">
+            <h3 class="price-title">Стоимость в сутки (Р):</h3>
+            <span class="price-from">От</span>
+            <span class="price-before">До</span>
             <input type="range" min="0" max="4000" step="500">
           </div>
         </form>
       </div>
       <div class="finds">
-        <div class="sorting">
-          <span class="find-obj">Найдено: 3</span>
-          <div class="sorting-by">
-            <span>Сортировка:</span>
-            <a href="#">По цене</a>
-            <a href="#">По типу</a>
-            <a href="#">По рейтингу</a>
+        <div class="finds-sorting">
+          <span class="sorting-found">Найдено: 3</span>
+          <div class="sorting-type">
+            <span class="type-item">Сортировка:</span>
+            <ul class="type-list">
+              <li><a href="#">По цене</a></li>
+              <li><a href="#">По типу</a></li>
+              <li><a href="#">По рейтингу</a></li>
+            </ul>
           </div>
-          <button class="up" type="button">up</button>
-          <button class="down" type="button">down</button>
+          <div class="sorting-icon">
+            <span class="icon-up-dir">up</span>
+            <span class="icon-down-dir">down</span>
+          </div>
         </div>
-        <div class="objects">
-          <div class="obj-1">
-            <img src="http://placehold.it/130x70" alt="#">
-            <h2>Amara resort & SPA</h2>
-            <span class="filter-type">Гостиница</span>
-            <span class="filter-price">От 3500 Р.</span>
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
-            <span class="rating">Рейтинг: 8,5</span>
+        <div class="finds-object">
+          <div class="object-result">
+            <img class="result-photo" src="http://placehold.it/130x70" alt="#">
+            <h2 class="result-title">Amara resort & SPA</h2>
+            <span class="result-type">Гостиница</span>
+            <span class="result-price">От 3500 Р.</span>
+            <a class="result-detail" href="#">Подробнее</a>
+            <a class="result-reservations" href="#">Забронировать</a>
+            <span class="type-rating">Рейтинг: 8,5</span>
           </div>
-          <div class="obj-2">
-            <img src="http://placehold.it/130x70" alt="#">
-            <h2>Desert quail inn</h2>
-            <span class="filter-type">Мотель</span>
-            <span class="filter-price">От 2000 Р.</span>
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
-            <span class="rating">Рейтинг: 8,9</span>
+          <div class="object-result">
+            <img class="result-photo" src="http://placehold.it/130x70" alt="#">
+            <h2 class="result-title">Desert quail inn</h2>
+            <span class="result-type">Мотель</span>
+            <span class="result-price">От 2000 Р.</span>
+            <a class="result-detail" href="#">Подробнее</a>
+            <a class="result-reservations" href="#">Забронировать</a>
+            <span class="type-rating">Рейтинг: 8,9</span>
           </div>
-          <div class="obj-3">
-            <img src="http://placehold.it/130x70" alt="#">
-            <h2>Villas at poco diablo</h2>
-            <span class="filter-type">Апартаменты</span>
-            <span class="filter-price">От 4000 Р.</span>
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
-            <span class="rating">Рейтинг: 9,2</span>
+          <div class="object-result">
+            <img class="result-photo" src="http://placehold.it/130x70" alt="#">
+            <h2 class="result-title">Villas at poco diablo</h2>
+            <span class="result-type">Апартаменты</span>
+            <span class="result-price">От 4000 Р.</span>
+            <a class="result-detail" href="#">Подробнее</a>
+            <a class="result-reservations" href="#">Забронировать</a>
+            <span class="type-rating">Рейтинг: 9,2</span>
           </div>
         </div>
       </div>
@@ -99,15 +103,15 @@
 
   <footer class="main-footer">
     <div class="container">
-      <div class="hashtag">#visitsedona</div>
+      <span class="footer-hashtag">#visitsedona</span>
       <div class="footer-social">
-          <a href="#" class="social-btn social-btn-tw">Твитер</a>
-          <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-          <a href="#" class="social-btn social-btn-ytb">Ютуб</a>
+          <a class="social-btn social-btn-tw" href="#">Твитер</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-ytb" href="#">Ютуб</a>
       </div>
       <div class="footer-logo">
-        <span>WEBSITE by</span>
-        <img src="http://placehold.it/130x70" alt="#">
+        <span class="logo-by">WEBSITE by</span>
+        <img class="logo-picture" src="http://placehold.it/130x70" alt="#">
       </div>
     </div>
   </footer>
