@@ -14,6 +14,7 @@ body, h1, h2, h3, ul, li, p {
  */
 
 body {
+  font-family: "PT Sans", sans-serif;
   font-size: 14px;
 }
 
@@ -81,7 +82,7 @@ h1, h2, h3 {
 
 .index-content .intro {
   position: relative;
-  margin-bottom: 65px;
+  margin-bottom: 55px;
 }
 
 .intro .welcom {
@@ -104,8 +105,11 @@ h1, h2, h3 {
 
 .content .intro-title {
   margin-bottom: 35px;
+  padding-left: 90px;
+  padding-right: 90px;
   font-size: 21px;
   font-weight: bold;
+  line-height: 25px;
 }
 
 .content .intro-description {
@@ -136,16 +140,17 @@ h1, h2, h3 {
 .reason-item {
   padding-left: 3.75%;
   padding-right: 3.75%;
-  padding-top: 55px;
-  padding-bottom: 55px;
+  padding-top: 44px;
+  padding-bottom: 66px;
   text-align: center;
+  line-height: 25px;
 }
 
 .features-item {
   padding-left: 3.75%;
   padding-right: 3.75%;
-  padding-top: 60px;
-  padding-bottom: 80px;
+  padding-top: 55px;
+  padding-bottom: 85px;
   text-align: center;
 }
 
@@ -156,8 +161,8 @@ h1, h2, h3 {
 }
 
 .reason-title {
-  padding-left: 26%;
-  padding-right: 26%;
+  padding-left: 25%;
+  padding-right: 25%;
 }
 
 .features-title {
@@ -166,6 +171,7 @@ h1, h2, h3 {
 }
 
 .reason-description {
+  line-height: 17px;
   text-transform: uppercase;
 }
 .features-description {
@@ -174,6 +180,8 @@ h1, h2, h3 {
 }
 
 .reason-item.active-item {
+  padding-top: 49px;
+  padding-bottom: 61px;
   background-color: #81b3d2;
   color: #fff;
 }
@@ -189,27 +197,29 @@ h1, h2, h3 {
 .search {
   width: 47.33333333333333%;
   margin: 0 auto;
-  padding-top: 55px;
+  padding-top: 48px;
 }
 
 .search-question {
-  margin-bottom: 26px;
+  margin-bottom: 22px;
   font-size: 30px;
   font-weight: bold;
   text-align: center;
 }
 
 .search-description {
-  font-size: 14px;
+  margin-bottom: 46px;
+  padding-left: 80px;
+  padding-right: 80px;
   line-height: 24px;
+  font-size: 14px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 46px;
 }
 
 .search-title {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 29px;
+  padding-bottom: 29px;
   background-color: #766357;
   color: #fff;
   text-align: center;
@@ -219,16 +229,18 @@ h1, h2, h3 {
 .search-container {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 50px;
+  padding-top: 62px;
   padding-left: 55px;
   padding-right: 55px;
+  padding-bottom: 45px;
+  margin-bottom: 83px;
 }
 
 .search-date,
 .search-adults,
 .search-children { 
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 45px;
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
@@ -241,6 +253,18 @@ search-date input {
 
 .search-children,
 .search-adults { width: 50%; }
+
+.search-button {
+  width: 457px;
+  height: 60px;
+  border: none;
+  color: #fff;
+  font-family: "PT Sans", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+}
 
 /*
  * Стилизация Подвала сайта
@@ -273,6 +297,7 @@ search-date input {
   justify-content: space-around;
   align-items: center;
   min-height: 120px;
+  background-color: #ccc;
 }
 
 .foo-hashtag {
