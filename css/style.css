@@ -264,7 +264,8 @@ search-date input {
 
 
 .search-children,
-.search-adults { width: 50%; }
+.search-adults { 
+  width: 50%; }
 
 .search-button {
   width: 457px;
@@ -304,4 +305,43 @@ search-date input {
   font-size: 21px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+/*
+ * INPUT
+ */
+
+input {
+  border: none;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  background-color: #f2f2f2;  
+}
+
+input[type="text"] {
+  width: 346px;
+  height: 38px;
+}
+
+input[type="number"] {
+  width: 38px;
+  height: 38px;
+  -moz-appearance:textfield;
+  text-align: center;
+  padding: 0;
+}
+
+.for-plus,
+.for-minus {  
+  width: 38px;
+  height: 38px;
+  font-size: 14px;
+  line-height: 38px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #f2f2f2;
 }
