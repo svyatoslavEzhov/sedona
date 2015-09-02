@@ -3,23 +3,24 @@ body, h1, h2, h3, ul, li, p {
   margin: 0;
 }
 
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 /*
  * Общие стили
  */
 
 body {
+  position: relative;
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
+  background-color: #f2f2f2;
 }
 
-h1, h2, h3 {
+h1, h2, h3, p, a {
   text-transform: uppercase;
+}
+
+.main-header .container,
+.index-content .container {
+  background-color: #fff;
 }
 
 /*
@@ -27,52 +28,47 @@ h1, h2, h3 {
  */
 
 .container {
+  margin: 0 auto;
   max-width: 1200px;
   min-width: 768px;
-  margin: 0 auto;
-}
-
-.main-header .container { position: relative; }
-
-.main-header .logo {
-  position: absolute;
-  left: 44.25%;
-  top: 0;
-  z-index: 1;
-  width: 11.5%;
 }
 
 .navigation-list {
-  width: auto;
-  height: auto;
-  padding-top: 1.5%;
-  padding-bottom: 1.5%;
+  display: flex;
+  justify-content: space-between;
+  max-height: 55px;
   padding-left: 6%;
   padding-right: 6%;
   list-style: none;
 }
 
-.navigation-item {
-  width: 22.72727272727273%;
-  text-align: left;
+.navigation-list .logo {
+  position: relative;
+  width: 138px;
+  height: 70px;
 }
 
-.navigation-item:nth-child(1),
-.navigation-item:nth-child(2) {
-  float: left;
+.navigation-list .logo-position {
+  position: absolute;  
+  z-index: 1;
+}
+
+.navigation-item {
+  width: 22.72727272727273%;
+  padding-top: 17px;
+  text-align: left;
 }
 
 .navigation-item:nth-last-child(1),
 .navigation-item:nth-last-child(2) {
-  float: right;
   text-align: right;
 }
 
 .navigation-item a {
   font-size: 14px;
   font-weight: bold;
+  line-height: 14px;
   text-decoration: none;
-  text-transform: uppercase;
   color: #000;
 }
 
@@ -87,10 +83,10 @@ h1, h2, h3 {
 
 .intro .welcom {
   position: absolute;
-  width: 100%;
   z-index: 1;
-  text-align: center;
   top: 77px;
+  width: 100%;
+  text-align: center;
 }
 
 /*
@@ -98,24 +94,24 @@ h1, h2, h3 {
  */
 
 .content .intro {
-  padding-left: 23.5%;
-  padding-right: 23.5%;
+  padding-left: 18.5%;
+  padding-right: 18.5%;
   text-align: center;
 }
 
 .content .intro-title {
   margin-bottom: 35px;
-  padding-left: 90px;
-  padding-right: 90px;
+  padding-left: 9%;
+  padding-right: 9%;
   font-size: 21px;
   font-weight: bold;
   line-height: 25px;
 }
 
 .content .intro-description {
-  margin-bottom: 55px;
-  font-size: 14px;
-  text-transform: uppercase;
+  margin-bottom: 59px;
+  font-size: 14px; 
+  line-height: 14px;
 }
 
 /*
@@ -133,50 +129,25 @@ h1, h2, h3 {
 .reason-photo  { max-height: 256px; }
 .features-item { max-height: 190px; }
 
-.reason-item   { width: 25.8%; }
-.reason-photo  { width: 66.6%; }
-.features-item { width: 33.3%; }
+.reason-item   { width: 21.7777%; }
+.reason-photo  { width: 66.6666%; }
+.features-item { width: 33.3333%; }
 
 .reason-item {
-  padding-left: 3.75%;
-  padding-right: 3.75%;
+  padding-left: 5.8%;
+  padding-right: 5.8%;
   padding-top: 44px;
   padding-bottom: 66px;
   text-align: center;
-  line-height: 25px;
+  background-color: #eeeeee;
 }
 
 .features-item {
-  padding-left: 3.75%;
-  padding-right: 3.75%;
+  padding-left: 5.8%;
+  padding-right: 5.8%;
   padding-top: 55px;
   padding-bottom: 85px;
   text-align: center;
-}
-
-.reason-number {
-  display: block;
-  padding-top: 21px;
-  padding-bottom: 21px;
-}
-
-.reason-title {
-  padding-left: 25%;
-  padding-right: 25%;
-}
-
-.features-title {
-  padding-top: 21px;
-  padding-bottom: 21px;
-}
-
-.reason-description {
-  line-height: 17px;
-  text-transform: uppercase;
-}
-.features-description {
-  line-height: 21px;
-  text-transform: uppercase;
 }
 
 .reason-item.active-item {
@@ -186,8 +157,40 @@ h1, h2, h3 {
   color: #fff;
 }
 
-.reason-item {
-  background-color: #eeeeee;
+.reason-title {
+  padding-left: 20%;
+  padding-right: 20%;
+  font-size: 21px;
+  line-height: 27px;
+}
+
+.features-title {
+  padding-top: 21px;
+  padding-bottom: 21px;
+  font-size: 21px;
+  line-height: 27px;
+}
+
+.reason-number {
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.reason-item.active-item .reason-number {
+  padding-top: 22px;
+  padding-bottom: 23px;
+}
+
+.reason-description {
+  font-size: 14px;
+  line-height: 18px;
+}
+.features-description {
+  font-size: 14px;
+  line-height: 21px;
 }
 
 /*
@@ -195,45 +198,54 @@ h1, h2, h3 {
  */
 
 .search {
-  width: 47.33333333333333%;
-  margin: 0 auto;
-  padding-top: 48px;
+  padding-top: 53px;
 }
 
 .search-question {
-  margin-bottom: 22px;
+  margin-bottom: 28px;
   font-size: 30px;
+  line-height: 30px;
   font-weight: bold;
   text-align: center;
 }
 
 .search-description {
   margin-bottom: 46px;
-  padding-left: 80px;
-  padding-right: 80px;
-  line-height: 24px;
+  padding-left: 28%;
+  padding-right: 28%;
   font-size: 14px;
-  text-transform: uppercase;
+  line-height: 24px;
   text-align: center;
 }
 
 .search-title {
-  padding-top: 29px;
-  padding-bottom: 29px;
+  margin: 0 auto;
+  width: 568px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   background-color: #766357;
   color: #fff;
   text-align: center;
   font-size: 21px;
+  line-height: 21px;
 }
 
 .search-container {
-  display: flex;
+  height: 593px;
+  background-image: url(../img/map.jpg);
+}
+
+.search-form {
+  margin: 0 auto;
+  display: flex;  
   flex-wrap: wrap;
+  width: 458px;
+  height: 288px;
   padding-top: 62px;
   padding-left: 55px;
   padding-right: 55px;
   padding-bottom: 45px;
-  margin-bottom: 83px;
+  background-color: #fff;
 }
 
 .search-date,
@@ -269,44 +281,27 @@ search-date input {
 /*
  * Стилизация Подвала сайта
  */
-/*
-.main-footer {
-  position: relative;
-  z-index: 0;
-}
-*/
 
-/*
-.main-footer .container::after {
+
+.main-footer {
   position: absolute;
-  z-index: 1;
   bottom: 0;
   left: 0;
-  content: "dsa ";
-  display: block;
+  z-index: 0;
   width: 100%;
-  background-image: url(../img/map.jpg);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: auto
+  height: 120px;
 }
-*/
 
 .main-footer .container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 120px;
-  background-color: #ccc;
+  background-color: rgba(255,255,255,.9);
 }
 
 .foo-hashtag {
   font-size: 21px;
   font-weight: bold;
   text-transform: uppercase;
-}
-
-.logo-by {
-  height: 100%;
-  vertical-align: middle;
 }

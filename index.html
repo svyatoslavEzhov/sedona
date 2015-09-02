@@ -11,16 +11,14 @@
   <header class="main-header">
     <div class="container">
       <nav class="main-navigation">
-        <ul class="navigation-list clearfix">
+        <ul class="navigation-list">
           <li class="navigation-item"><a href="#">Информация</a></li>
           <li class="navigation-item"><a href="#">Фото и видео</a></li>
-          <li class="navigation-item"><a href="#">Гостиницы</a></li>
+          <li class="logo"><a class="logo-position" href="#"><img src="img/logo.png" alt="Логотип"></a></li>
           <li class="navigation-item"><a href="#">Карта штата</a></li>
+          <li class="navigation-item"><a href="#">Гостиницы</a></li>
         </ul>
       </nav>
-      <div class="logo">
-         <a href="#"><img src="img/logo.png" alt="Логотип" width="100%"></a>
-      </div>
     </div>
   </header>
   <main class="index-content">
@@ -98,36 +96,36 @@
       <div class="search">
         <h3 class="search-question">ЗАИНТЕРЕСОВАЛИСЬ?</h3>
         <p class="search-description">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <form class="search-form" action="/ehco" method="post">
-          <h2 class="search-title">ПОИСК ГОСТИНИЦЫ В седоне</h2>
-          <div class="search-container">
-            <label class="search-date">
-              Дата заезда:
-              <input type="text" name="date-in" placeholder="24 Апреля 2014">
-            </label>
-            <label class="search-date">
-              Дата Выезда:
-              <input type="text" name="date-out" placeholder="4 июля 2014">
-            </label>
-            <div class="search-children">
-              <span class="for-age">Взрослыe:</span>
-              <span class="for-plus">+</span>
-              <input type="number">
-              <span class="for-minus">-</span>
+        <h2 class="search-title">ПОИСК ГОСТИНИЦЫ В седоне</h2>
+        <div class="search-container">
+          <form class="search-form" action="/ehco" method="post">
+              <label class="search-date">
+                Дата заезда:
+                <input type="text" name="date-in" placeholder="24 Апреля 2014">
+              </label>
+              <label class="search-date">
+                Дата Выезда:
+                <input type="text" name="date-out" placeholder="4 июля 2014">
+              </label>
+              <div class="search-children">
+                <span class="for-age">Взрослыe:</span>
+                <span class="for-plus">+</span>
+                <input type="number">
+                <span class="for-minus">-</span>
+              </div>
+              <div class="search-adults">
+                <span class="for-age">Дети:</span>
+                <span class="for-plus">+</span>
+                <input type="number">
+                <span class="for-minus">-</span>
+              </div>
+              <div class="button-container">
+                <button class="search-button" type="submit">Найти</button>
+              </div>
             </div>
-            <div class="search-adults">
-              <span class="for-age">Дети:</span>
-              <span class="for-plus">+</span>
-              <input type="number">
-              <span class="for-minus">-</span>
-            </div>
-            <div class="button-container">
-              <button class="search-button" type="submit">Найти</button>
-            </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
-    </div>
   </main>
   
   <footer class="main-footer">
