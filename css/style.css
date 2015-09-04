@@ -1,21 +1,18 @@
-body, h1, h2, h3, ul, li, p {
-  padding: 0;
-  margin: 0;
-}
-
-/*
+/**
  * Общие стили
  */
 
 body {
   position: relative;
-  font-family: "PT Sans", sans-serif;
+  
+  margin: 0;
+  padding: 0;
+  
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
-  background-color: #f2f2f2;
-}
-
-h1, h2, h3, p, a {
   text-transform: uppercase;
+  
+  background-color: #f2f2f2;
 }
 
 .main-header .container,
@@ -23,7 +20,7 @@ h1, h2, h3, p, a {
   background-color: #fff;
 }
 
-/*
+/**
  * Стилизация шапки и навигации по сайту
  */
 
@@ -39,23 +36,27 @@ h1, h2, h3, p, a {
   max-height: 55px;
   padding-left: 6%;
   padding-right: 6%;
+  margin: 0;
+  
   list-style: none;
 }
 
 .navigation-list .logo {
   position: relative;
+  
   width: 138px;
   height: 70px;
 }
 
 .navigation-list .logo-position {
-  position: absolute;  
+  position: absolute;
   z-index: 1;
 }
 
 .navigation-item {
   width: 22.72727272727273%;
   padding-top: 17px;
+  
   text-align: left;
 }
 
@@ -66,18 +67,19 @@ h1, h2, h3, p, a {
 
 .navigation-item a {
   font-size: 14px;
-  font-weight: bold;
   line-height: 14px;
+  font-weight: bold;
   text-decoration: none;
   color: #000;
 }
 
-/*
+/**
  * Стилизация приветствия и вступительных фоновых картинок для главного контента (index-content)
  */
 
 .index-content .intro {
   position: relative;
+  
   margin-bottom: 55px;
 }
 
@@ -85,17 +87,20 @@ h1, h2, h3, p, a {
   position: absolute;
   z-index: 1;
   top: 77px;
+  
   width: 100%;
+  
   text-align: center;
 }
 
-/*
+/**
  * Стилизация вступления для внутренего контента (content)
  */
 
 .content .intro {
   padding-left: 18.5%;
   padding-right: 18.5%;
+  
   text-align: center;
 }
 
@@ -103,24 +108,26 @@ h1, h2, h3, p, a {
   margin-bottom: 35px;
   padding-left: 9%;
   padding-right: 9%;
+  
   font-size: 21px;
-  font-weight: bold;
   line-height: 25px;
+  font-weight: bold;
 }
 
 .content .intro-description {
   margin-bottom: 59px;
-  font-size: 14px; 
+  font-size: 14px;
   line-height: 14px;
 }
 
-/*
+/**
  * Стилизация строк для внутренего контента (reason-row, features-row) [+СЕТКА]
  */
 
 .reason-list,
 .features-list {
   display: flex;
+  
   width: 100%;
   list-style: none;
 }
@@ -133,12 +140,20 @@ h1, h2, h3, p, a {
 .reason-photo  { width: 66.6666%; }
 .features-item { width: 33.3333%; }
 
+.reason-list,
+.features-list{
+  margin: 0;
+  padding: 0;
+}
+
 .reason-item {
   padding-left: 5.8%;
   padding-right: 5.8%;
   padding-top: 44px;
   padding-bottom: 66px;
+  
   text-align: center;
+  
   background-color: #eeeeee;
 }
 
@@ -147,34 +162,43 @@ h1, h2, h3, p, a {
   padding-right: 5.8%;
   padding-top: 55px;
   padding-bottom: 85px;
+  
   text-align: center;
 }
 
 .reason-item.active-item {
   padding-top: 49px;
   padding-bottom: 61px;
-  background-color: #81b3d2;
+  
   color: #fff;
+  
+  background-color: #81b3d2;
 }
 
 .reason-title {
+  margin: 0;
   padding-left: 20%;
   padding-right: 20%;
+  
   font-size: 21px;
   line-height: 27px;
 }
 
 .features-title {
+  margin: 0;
   padding-top: 21px;
   padding-bottom: 21px;
+  
   font-size: 21px;
   line-height: 27px;
 }
 
 .reason-number {
   display: block;
+  
   padding-top: 21px;
   padding-bottom: 21px;
+  
   font-size: 14px;
   line-height: 14px;
 }
@@ -185,16 +209,21 @@ h1, h2, h3, p, a {
 }
 
 .reason-description {
+  margin: 0;
+  
   font-size: 14px;
   line-height: 18px;
 }
 .features-description {
+  margin: 0;
+  
   font-size: 14px;
   line-height: 21px;
 }
 
-/*
+/**
  * Стилизация обертки .search и внутреней формы.
+ * <form> - in progress
  */
 
 .search {
@@ -202,7 +231,9 @@ h1, h2, h3, p, a {
 }
 
 .search-question {
+  margin-top: 0;
   margin-bottom: 28px;
+  
   font-size: 30px;
   line-height: 30px;
   font-weight: bold;
@@ -213,21 +244,24 @@ h1, h2, h3, p, a {
   margin-bottom: 46px;
   padding-left: 28%;
   padding-right: 28%;
+  
   font-size: 14px;
   line-height: 24px;
   text-align: center;
 }
 
 .search-title {
-  margin: 0 auto;
   width: 568px;
+  margin: 0 auto;
   padding-top: 32px;
   padding-bottom: 32px;
-  background-color: #766357;
-  color: #fff;
-  text-align: center;
+  
   font-size: 21px;
   line-height: 21px;
+  text-align: center;
+  color: #fff;
+  
+  background-color: #766357;
 }
 
 .search-container {
@@ -236,24 +270,28 @@ h1, h2, h3, p, a {
 }
 
 .search-form {
-  margin: 0 auto;
-  display: flex;  
+  display: flex;
   flex-wrap: wrap;
+  
+  margin: 0 auto;
   width: 458px;
   height: 288px;
   padding-top: 62px;
   padding-left: 55px;
   padding-right: 55px;
   padding-bottom: 45px;
+  
   background-color: #fff;
 }
 
 .search-date,
 .search-adults,
-.search-children { 
+.search-children {
   width: 100%;
   margin-bottom: 45px;
+  
   font-size: 14px;
+  line-height: 18px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -264,22 +302,25 @@ search-date input {
 
 
 .search-children,
-.search-adults { 
+.search-adults {
   width: 50%; }
 
 .search-button {
   width: 457px;
   height: 60px;
   border: none;
-  color: #fff;
+  
   font-family: "PT Sans", sans-serif;
   font-size: 21px;
+  line-height: 24px;
   font-weight: bold;
   text-transform: uppercase;
+  color: #fff;
+  
   background-color: #81b3d2;
 }
 
-/*
+/**
  * Стилизация Подвала сайта
  */
 
@@ -289,6 +330,7 @@ search-date input {
   bottom: 0;
   left: 0;
   z-index: 0;
+  
   width: 100%;
   height: 120px;
 }
@@ -296,8 +338,11 @@ search-date input {
 .main-footer .container {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  
   min-height: 120px;
+  
+  align-items: center;
+  
   background-color: rgba(255,255,255,.9);
 }
 
@@ -307,19 +352,20 @@ search-date input {
   text-transform: uppercase;
 }
 
-/*
+/**
  * INPUT
  */
 
 input {
-  border: none;
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
   color: #000;
-  background-color: #f2f2f2;  
+  
+  border: none;
+  background-color: #f2f2f2;
 }
 
 input[type="text"] {
@@ -330,18 +376,55 @@ input[type="text"] {
 input[type="number"] {
   width: 38px;
   height: 38px;
-  -moz-appearance:textfield;
-  text-align: center;
   padding: 0;
+  
+  text-align: center;
+  
+  -moz-appearance:textfield;
 }
 
 .for-plus,
-.for-minus {  
+.for-minus {
   width: 38px;
   height: 38px;
+  
   font-size: 14px;
   line-height: 38px;
   text-align: center;
   vertical-align: middle;
+  
   background-color: #f2f2f2;
+}
+
+/* HOTELS.HTML
+   ========================================================================== */
+
+/*
+ * Стилизация формы (filter)
+ */
+
+.filter {
+  background-image: url(../img/background-filter.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-form {
+  display: flex;
+  justify-content: space-between;
+  
+  padding-top: 27px;
+}
+
+.infrastructure,
+.property {
+  width: ;
+  padding-left: 6%;
+}
+
+.infrastructure-title,
+.property-title {
+  font-size: 16px;
+  line-height: 16px;
+  color: #fff;
 }

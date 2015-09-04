@@ -3,52 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <title>Sedona</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700,400&subset=latin,cyrillic" rel="stylesheet" type="text/css">
 </head>
 <body>
  
   <header class="main-header">
-    <div class="contаiner">
-      <nav class="main-navigation clearfix">
-        <ul>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+    <div class="container">
+      <nav class="main-navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item"><a href="#">Информация</a></li>
+          <li class="navigation-item"><a href="#">Фото и видео</a></li>
+          <li class="logo"><a class="logo-position" href="#"><img src="img/logo.png" alt="Логотип"></a></li>
+          <li class="navigation-item"><a href="#">Карта штата</a></li>
+          <li class="navigation-item"><a href="#">Гостиницы</a></li>
         </ul>
       </nav>
-      <div class="logo">
-         <img src="http://placehold.it/130x70" alt="#">
-      </div>
     </div>
   </header>
 
   <main>
-    <div class="contаiner">
+    <div class="container">
       <div class="filter">
         <form class="filter-form" action="/echo" method="post">
-          <div class="form-infrastructure">
+          <div class="infrastructure">
             <h3 class="infrastructure-title">Инфраструктура</h3>
+            <div class="form-wrapper">
               <input id="pool" type="checkbox" checked>
               <label for="pool">Бассейн</label>
+            </div>
+            <div class="form-wrapper">
               <input id="parking" type="checkbox">
               <label for="parking">Парковка</label>
+            </div>
+            <div class="form-wrapper">
               <input id="wifi" type="checkbox">
               <label for="wifi">Wi-Fi</label>
+            </div>
           </div>
-          <div class="form-property">
+          <div class="property">
             <h3 class="property-title">Тип жилья</h3>
+            <div class="form-wrapper">
               <input id="hotel" type="checkbox" checked>
               <label for="hotel">Гостиница</label>
+            </div>
+            <div class="form-wrapper">              
               <input id="motel" type="checkbox" checked>
               <label for="motel">Мотель</label>
+            </div>
+            <div class="form-wrapper">              
               <input id="apartments" type="checkbox" checked>
               <label for="apartments">Апартаменты</label>
+            </div>
           </div>
-          <div class="property-price">
+          <div class="price">
             <h3 class="price-title">Стоимость в сутки (Р):</h3>
             <span class="price-from">От</span>
-            <span class="price-before">До</span>
             <input type="range" min="0" max="4000" step="500">
+            <span class="price-before">До</span>
+            <button type="submit">Показать</button>
           </div>
         </form>
       </div>
