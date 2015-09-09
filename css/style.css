@@ -183,14 +183,14 @@ body {
  * Стилизация вступления для внутренего контента (content)
  */
 
-.content .intro {
+.intro {
   padding-left: 18.5%;
   padding-right: 18.5%;
   
   text-align: center;
 }
 
-.content .intro-title {
+.intro-title {
   margin-bottom: 35px;
   padding-left: 9%;
   padding-right: 9%;
@@ -200,7 +200,7 @@ body {
   font-weight: bold;
 }
 
-.content .intro-description {
+.intro-description {
   margin-bottom: 59px;
   font-size: 14px;
   line-height: 14px;
