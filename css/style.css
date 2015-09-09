@@ -738,6 +738,7 @@ input::-moz-placeholder { opacity: 1; }
 
 .filter-point input { display: none; }
 
+.filter-point label { cursor: pointer; }
 
 .filter-point label::before {
   content: "\2610";
@@ -746,7 +747,14 @@ input::-moz-placeholder { opacity: 1; }
   
   font-family: "symbols-sedona";
   font-size: 26px;
+  color: #b5b5b5;
+  
+  cursor: pointer;
 }
+
+.filter-point label:hover::before { color: #fefefe; }
+
+.filter-point label:active::before { color: #6a6a6a; }
 
 .filter-point input:checked + label::before { content: "\2611" }
 
@@ -762,6 +770,8 @@ input::-moz-placeholder { opacity: 1; }
 /*
  * Стилизация формы (рейндж)
  */
+
+.filter-price { min-width: 320px; }
 
 .filter-price .filter-title {
   margin-bottom: 13px;
@@ -829,10 +839,12 @@ input::-moz-placeholder { opacity: 1; }
   height: 4px;
   border: 8px solid #fff;
   border-radius: 50%;
-  background-color: #1c4f80;
+  background-color: #ababab;
   
   cursor: pointer;
 }
+
+.filter-toggle:hover { background-color: #1c4f80; }
 
 .filter-range .toggle-min {
   left: 0;
@@ -869,12 +881,14 @@ input::-moz-placeholder { opacity: 1; }
   
   min-height: 86px;
   border-bottom: 1px solid #e5e5e5;
-  padding-left: 76px;
+  padding-left: 71px;
   
   background-color: #fff;
 }
 
 .sorting-found {
+  width: 130px;
+  
   font-size: 21px;
   line-height: 25px;
   font-weight: bold;
@@ -890,6 +904,7 @@ input::-moz-placeholder { opacity: 1; }
   display: flex;
   
   width: 65%;
+  max-width: 470px;
   
   font-size: 12px;
   line-height: 14px;
@@ -911,12 +926,21 @@ input::-moz-placeholder { opacity: 1; }
   color: #b1b1b1;
 }
 
+.sorting-list a:not(.active):hover { color: #81b3d2; }
+
+.sorting-list a:not(.active):active {
+  border-bottom: none;
+
+  color: #000;
+}
+
 .sorting-list .active {
   color: #81b3d2;
   text-decoration: none;
 }
 
 .sorting-icon {
+  width: 70px;
 }
 
 .icon-dir {
@@ -924,7 +948,17 @@ input::-moz-placeholder { opacity: 1; }
   font-size: 23px;
   line-height: 20px;
   color: #ccc;
+  
+  cursor: pointer;
 }
+
+.icon-dir.active::before {
+  color: #81b3d2;
+}
+
+.icon-dir:hover::before { color: #000; }
+
+.icon-dir:active::before { color: #81b3d2; }
 
 /*
  * Стилизация списка найденых объектов
@@ -932,10 +966,133 @@ input::-moz-placeholder { opacity: 1; }
 
 .objects-result {
   display: flex;
+  justify-content: space-between;
   
   min-height: 90px;
-  padding: 30px 0;
+  padding-left: 72px;
+  padding-right: 73px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   border-bottom: 1px solid #e5e5e5;
   
   background-color: #fff;
+}
+
+.objects-result img {
+  width: 135px;
+  height: 90px;
+  
+  margin-right: 30px;
+}
+
+.objects-item {
+  display: flex;
+  
+  width: 423px;
+}
+
+.objects-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.objects-title {
+  margin-top: 0;
+  margin-bottom: 14px;
+  
+  line-height: 14px;
+  
+  cursor: pointer;
+}
+
+.objects-title:hover { color: #81b3d2; }
+
+.objects-title:active { color: #b2b2b2; }
+
+.objects-wrapper {
+  display: flex;
+  justify-content:space-between;
+  
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.objects-detail {
+  padding: 5px 17px;
+  
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  
+  background-color: #81b3d2;
+}
+
+.objects-detail:hover { background-color: #669ec0; }
+
+.objects-detail:active {
+  background-color: #669ec0;
+  color: #88b6d1;
+}
+
+.objects-reservations {
+  padding: 5px 17px;
+  
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  
+  background-color: #766357;
+}
+
+.objects-reservations:hover { background-color: #604e43; }
+
+.objects-reservations:active {
+  background-color: #604e43;
+  color: #857871;
+}
+
+.objects-rating { text-align: right; }
+
+.type-rating {
+  padding-top: 6px;
+  padding-bottom: 7px;
+  padding-left: 16px;
+  padding-right: 13px;
+  
+  color: #666;
+  
+  background-color: #f2f2f2;
+}
+
+.stars-list {
+  display: flex;
+  width: 127px;
+    
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 45px;
+  
+  list-style: none;
+}
+
+.icon-star {
+  font-size: 19px;
+  line-height: 19px;
+  color: #fff;
+  
+  cursor: pointer;
+}
+
+.icon-star:hover { color: #81b3d2; }
+
+.objects-result:first-child li:nth-last-child(-n+3) i {
+  color: #81b3d2;
+}
+
+.objects-result:nth-child(2) li:nth-last-child(-n+2) i {
+  color: #81b3d2;
+}
+
+.objects-result:last-child li:nth-last-child(-n+3) i {
+  color: #81b3d2;
 }
