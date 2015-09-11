@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <title>Sedona</title>
   <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:700,400&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
 </head>
+
 <body>
- 
-<div class="shadow-container">
+
+  <div class="shadow-container">
     <header class="main-header">
       <div class="container">
         <nav class="main-navigation">
@@ -32,7 +34,7 @@
         </nav>
       </div>
     </header>
-  
+
     <main class="index-content">
       <div class="container">
         <div class="greeting">
@@ -65,7 +67,8 @@
               </li>
               <li class="features-item">
                 <h2 class="features-title">Сувениры</h2>
-                <p class="features-description">Не только китайского,<br>но и местного производства!</p>
+                <p class="features-description">Не только китайского,
+                  <br>но и местного производства!</p>
               </li>
             </ul>
           </div>
@@ -74,7 +77,8 @@
             <div class="reason-item active-item">
               <h2 class="reason-title">ТАМ ЕСТЬ<br>Мост дьявола</h2>
               <span class="reason-number">— №2 —</span>
-              <p class="reason-description">Да, по нему можно пройти!<br>Если конечно вы осмелитесь</p>
+              <p class="reason-description">Да, по нему можно пройти!
+                <br>Если конечно вы осмелитесь</p>
             </div>
           </div>
           <div class="reason-row">
@@ -82,7 +86,8 @@
               <li class="reason-item">
                 <h2 class="reason-title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
                 <span class="reason-number">— №3 —</span>
-                <p class="reason-description">ВСЕ достопримеча-<br>тельности находятся очень близко</p>
+                <p class="reason-description">ВСЕ достопримеча-
+                  <br>тельности находятся очень близко</p>
               </li>
               <li class="reason-item">
                 <h2 class="reason-title">КРАСИВАЯ ДОРОГА</h2>
@@ -99,32 +104,33 @@
         </div>
         <div class="search">
           <h3 class="search-question">ЗАИНТЕРЕСОВАЛИСЬ?</h3>
-          <p class="search-description">Укажите предполагаемые даты поездки<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <h2 class="search-title">ПОИСК ГОСТИНИЦЫ В седоне</h2>
+          <p class="search-description">Укажите предполагаемые даты поездки
+            <br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <a class="search-title" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
           <div class="search-container">
             <form class="search-form" action="/ehco" method="post">
-              <label class="search-point search-date">Дата заезда:</label>
-              <input type="text" name="date-in" placeholder="24 Апреля 2014">
-              <label class="search-point search-date">Дата Выезда:</label>
-              <input type="text" name="date-out" placeholder="4 июля 2014">
+              <label class="search-point search-date" for="date-in">Дата заезда:</label>
+              <input id="date-in" type="text" name="date-in" placeholder="24 Апреля 2014">
+              <label class="search-point search-date" for="date-out">Дата Выезда:</label>
+              <input id="date-out" type="text" name="date-out" placeholder="4 июля 2014">
               <div class="search-point search-count">
-                <span class="search-age">Взрослыe:</span>
+                <label class="search-age" for="adults">Взрослыe:</label>
                 <div class="search-wrapper">
                   <i class="icon-minus"></i>
-                  <input class="search-number" type="text" placeholder="2">
+                  <input id="adults" class="search-number" name="adults" type="text" placeholder="2">
                   <i class="icon-plus"></i>
                 </div>
               </div>
               <div class="search-point search-count">
-                <span class="search-age">Дети:</span>
+                <label class="search-age" for="children">Дети:</label>
                 <div class="search-wrapper">
                   <i class="icon-minus"></i>
-                  <input class="search-number" type="text" placeholder="0">
+                  <input id="children" class="search-number" name="children" type="text" placeholder="0">
                   <i class="icon-plus"></i>
                 </div>
               </div>
               <div class="button-container">
-                    <button class="search-button" type="submit">Найти</button>
+                <button class="search-button" type="submit">Найти</button>
               </div>
             </form>
           </div>
@@ -132,7 +138,7 @@
       </div>
     </main>
   </div>
-  
+
   <footer class="main-footer absolute">
     <div class="container">
       <span class="foo-hashtag">#visitsedona</span>
@@ -147,6 +153,7 @@
       </div>
     </div>
   </footer>
-  
+
 </body>
+
 </html>
