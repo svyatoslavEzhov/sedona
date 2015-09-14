@@ -159,7 +159,7 @@
 <script>
   var link = document.querySelector(".search-open");
   var popup = document.querySelector(".search-form");
-  var overlay = document.querySelector(".overlay")
+  var overlay = document.querySelector(".js-overlay");
   var dateIn = popup.querySelector(".date-in");
   var dateOut = popup.querySelector(".date-out");
   
@@ -174,7 +174,7 @@
       }, 600);
     } else {
       event.preventDefault();
-      overlay.classList.add("search-overlay")
+      overlay.classList.add("search-overlay");
       popup.classList.add("search-show");
       popup.classList.remove("search-hidden");
       popup.classList.remove("form-error");
