@@ -163,9 +163,7 @@
   var dateIn = popup.querySelector(".date-in");
   var dateOut = popup.querySelector(".date-out");
   var blockAdults = document.querySelector(".search-adults");
-  var valueAdults = document.querySelector(".value-adults");
   var blockChildren = document.querySelector(".search-children");
-  var valueChildren = document.querySelector(".value-children");
   
   link.addEventListener("click", function(event)
                         {
@@ -210,24 +208,20 @@
     }
   });
   
-  blockAdults.addEventListener("click", counterAdults);
-    function counterAdults () {
-      var element = event.target;
-      if(element.getAttribute("class") == "icon-plus"){
-        valueAdults.value = +valueAdults.value + 1;
-      } else if (element.getAttribute("class") == "icon-minus") {
-        valueAdults.value = valueAdults.value - 1;
-      }
+  blockAdults.addEventListener("click", counter);
+  blockChildren.addEventListener("click", counter);
+  function counter () {
+  var element = event.target,
+  myInput = element.parentNode.children[1];
+  if(element.getAttribute("class") == "icon-plus"){
+  myInput.value = +myInput.value + 1;
+  } else if (element.getAttribute("class") == "icon-minus") {
+  if (myInput.value == 0) {
+  myInput.value = 0;
+  } else {
+  myInput.value = myInput.value - 1;
   }
-  
-  blockChildren.addEventListener("click", counterChildren);
-    function counterChildren () {
-      var element = event.target;
-      if(element.getAttribute("class") == "icon-plus"){
-        valueChildren.value = +valueChildren.value + 1;
-      } else if (element.getAttribute("class") == "icon-minus") {
-        valueChildren.value = valueChildren.value - 1;
-      }
+  }
   }
 
   </script>
