@@ -481,7 +481,7 @@ body {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex
+  display: flex;
 
   -webkit-animation: bounce 0.6s;
   animation: bounce 0.6s;
@@ -1325,7 +1325,7 @@ body {
  * Анимации для JS
  */
 
-@keyframes shake {
+@-webkit-keyframes shake {
   0%, 100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -1340,7 +1340,7 @@ body {
   }
 }
 
-@-webkit-keyframes shake {
+@keyframes shake {
   0%, 100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -1427,4 +1427,3 @@ body {
   -webkit-animation: shake 0.6s;
   animation: shake 0.6s;
 }
-

@@ -212,22 +212,22 @@
   
   blockAdults.addEventListener("click", counter);
   blockChildren.addEventListener("click", counter);
-  function counter () {
-  var element = event.target,
-  myInput = element.parentNode.children[1];
-  if(element.getAttribute("class") == "icon-plus"){
-  myInput.value = +myInput.value + 1;
-  } else if (element.getAttribute("class") == "icon-minus") {
-  if (myInput.value == 0) {
-  myInput.value = 0;
-  } else {
-  myInput.value = myInput.value - 1;
+    function counter () {
+      var element = event.target,
+      myInput = element.parentNode.children[1];
+      if(element.getAttribute("class") == "icon-plus"){
+        myInput.value = +myInput.value + 1;
+      } else if (element.getAttribute("class") == "icon-minus") {
+        if (myInput.value == 0) {
+        myInput.value = 0;
+        } else {
+          myInput.value = myInput.value - 1;
   }
   }
   }
-
   </script>
-  <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=XeprX5tUV8WjuGU8Sup8mjewlMo969GU&width=1200&height=593&id=yandex-map"></script>
+  <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=XeprX5tUV8WjuGU8Sup8mjewlMo969GU&amp;width=1200&amp;height=593&amp;id=yandex-map"></script>
+</body>
 </body>
 
 </html>
