@@ -112,22 +112,22 @@
             <div class="js-overlay"></div>
             <form class="search-form" action="/ehco" method="post">
               <label class="search-point search-date" for="date-in">Дата заезда:</label>
-              <input class="date-in" id="date-in" type="text" name="date-in" placeholder="24 Апреля 2014">
+              <input class="date-in" id="date-in" type="text" name="date-in" placeholder="Введите дату">
               <label class="search-point search-date" for="date-out">Дата Выезда:</label>
-              <input class="date-out" id="date-out" type="text" name="date-out" placeholder="4 июля 2014">
+              <input class="date-out" id="date-out" type="text" name="date-out" placeholder="Введите дату">
               <div class="search-point search-count">
                 <label class="search-age" for="adults">Взрослыe:</label>
-                <div class="search-wrapper">
+                <div class="search-adults" onmousedown="return false" onselectstart="return false">
                   <i class="icon-minus"></i>
-                  <input id="adults" class="search-number" name="adults" type="text" placeholder="2">
+                  <input id="adults" class="value-adults" name="adults" type="text" value="2">
                   <i class="icon-plus"></i>
                 </div>
               </div>
               <div class="search-point search-count">
                 <label class="search-age" for="children">Дети:</label>
-                <div class="search-wrapper">
+                <div class="search-children" onmousedown="return false" onselectstart="return false">
                   <i class="icon-minus"></i>
-                  <input id="children" class="search-number" name="children" type="text" placeholder="0">
+                  <input id="children" class="value-children" name="children" type="text" value="0">
                   <i class="icon-plus"></i>
                 </div>
               </div>
@@ -162,6 +162,10 @@
   var overlay = document.querySelector(".js-overlay");
   var dateIn = popup.querySelector(".date-in");
   var dateOut = popup.querySelector(".date-out");
+  var blockAdults = document.querySelector(".search-adults");
+  var valueAdults = document.querySelector(".value-adults");
+  var blockChildren = document.querySelector(".search-children");
+  var valueChildren = document.querySelector(".value-children");
   
   link.addEventListener("click", function(event)
                         {
@@ -205,6 +209,27 @@
       }
     }
   });
+  
+  blockAdults.addEventListener("click", counterAdults);
+    function counterAdults () {
+      var element = event.target;
+      if(element.getAttribute("class") == "icon-plus"){
+        valueAdults.value = +valueAdults.value + 1;
+      } else if (element.getAttribute("class") == "icon-minus") {
+        valueAdults.value = valueAdults.value - 1;
+      }
+  }
+  
+  blockChildren.addEventListener("click", counterChildren);
+    function counterChildren () {
+      var element = event.target;
+      if(element.getAttribute("class") == "icon-plus"){
+        valueChildren.value = +valueChildren.value + 1;
+      } else if (element.getAttribute("class") == "icon-minus") {
+        valueChildren.value = valueChildren.value - 1;
+      }
+  }
+
   </script>
 <!--  <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=XeprX5tUV8WjuGU8Sup8mjewlMo969GU&width=1200&height=593&id=yandex-map"></script>-->
 </body>
