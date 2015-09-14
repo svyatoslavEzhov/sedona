@@ -387,6 +387,8 @@ body {
   padding-top: 53px;
 }
 
+.yandex-map { position: relative; }
+
 .search-question {
   margin-top: 0;
   margin-bottom: 28px;
@@ -427,13 +429,16 @@ body {
 }
 
 .search-container {
+  position: relative;
   height: 593px;
 
   background-image: url(../img/map.jpg);
 }
 
 .search-form {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 50%;
   z-index: 100;
   
   display: -webkit-box;
@@ -458,7 +463,7 @@ body {
   -ms-flex-line-pack: justify;
   align-content: space-between;
 
-  margin: 0 auto;
+  margin-left: -284px;
   width: 456px;
   height: 319px;
   padding-top: 54px;
