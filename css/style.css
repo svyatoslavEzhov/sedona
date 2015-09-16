@@ -851,6 +851,7 @@ body {
 
 .filter {
   background-image: url(../img/background-filter.jpg);
+  background-color: #3f749e;
   background-repeat: no-repeat;
   background-position: 0 -295px;
 }
