@@ -123,7 +123,7 @@ body {
 .logo {
   position: relative;
 
-  width: 138px;
+  width: 87px;
   height: 70px;
 }
 
@@ -134,7 +134,7 @@ body {
 }
 
 .navigation-item {
-  width: 38%;
+  width: 20%;
   padding-top: 17px;
 
   text-align: left;
@@ -330,7 +330,7 @@ body {
 .features-item {
   position: relative;
 
-  width: 33.3333%;
+  width: 22.9%;
   min-height: 194px;
   padding-left: 5.2%;
   padding-right: 5.2%;
